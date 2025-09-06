@@ -1,0 +1,90 @@
+
+    <p><strong>8. What is a list in ServiceNow?</strong></p>
+    <input type="radio" name="q8" value="a"> A graphical report of incidents.<br>
+    <input type="radio" name="q8" value="b"> A tabular display of records from a table.<br>
+    <input type="radio" name="q8" value="c"> A form used to create new records.<br>
+    <input type="radio" name="q8" value="d"> A dashboard widget.<br>
+
+    <p><strong>9. What is the purpose of a form in ServiceNow?</strong></p>
+    <input type="radio" name="q9" value="a"> To display multiple records.<br>
+    <input type="radio" name="q9" value="b"> To edit or view a single record.<br>
+    <input type="radio" name="q9" value="c"> To generate reports.<br>
+    <input type="radio" name="q9" value="d"> To filter data.<br>
+
+    <p><strong>10. What do filters do in ServiceNow?</strong></p>
+    <input type="radio" name="q10" value="a"> They delete records.<br>
+    <input type="radio" name="q10" value="b"> They sort records alphabetically.<br>
+    <input type="radio" name="q10" value="c"> They narrow down list results based on criteria.<br>
+    <input type="radio" name="q10" value="d"> They create new tables.<br>
+
+    <p><strong>11. What is a dashboard in ServiceNow?</strong></p>
+    <input type="radio" name="q11" value="a"> A form used to submit requests.<br>
+    <input type="radio" name="q11" value="b"> A visual display of reports and performance indicators.<br>
+    <input type="radio" name="q11" value="c"> A list of user roles.<br>
+    <input type="radio" name="q11" value="d"> A catalog of services.<br>
+
+    <p><strong>12. What is the purpose of reports in ServiceNow?</strong></p>
+    <input type="radio" name="q12" value="a"> To create new records.<br>
+    <input type="radio" name="q12" value="b"> To visualize and analyze data.<br>
+    <input type="radio" name="q12" value="c"> To assign tasks.<br>
+    <input type="radio" name="q12" value="d"> To impersonate users.<br>
+
+    <p><strong>13. What does user impersonation allow in ServiceNow?</strong></p>
+    <input type="radio" name="q13" value="a"> Logging in as another user to troubleshoot or test.<br>
+    <input type="radio" name="q13" value="b"> Deleting another user's account.<br>
+    <input type="radio" name="q13" value="c"> Changing another user's password.<br>
+    <input type="radio" name="q13" value="d"> Assigning roles to groups.<br>
+
+    <p><strong>14. What are user personas in ServiceNow?</strong></p>
+    <input type="radio" name="q14" value="a"> Templates for creating dashboards.<br>
+    <input type="radio" name="q14" value="b"> Predefined user types with specific access and responsibilities.<br>
+    <input type="radio" name="q14" value="c"> A list of all users in the system.<br>
+    <input type="radio" name="q14" value="d"> A report format.<br>
+
+    <p><strong>15. What is the Service Catalog used for?</strong></p>
+    <input type="radio" name="q15" value="a"> Viewing knowledge articles.<br>
+    <input type="radio" name="q15" value="b"> Requesting services and items.<br>
+    <input type="radio" name="q15" value="c"> Creating dashboards.<br>
+    <input type="radio" name="q15" value="d"> Assigning roles.<br>
+
+    <p><strong>16. What is the Knowledge Base in ServiceNow?</strong></p>
+    <input type="radio" name="q16" value="a"> A database of user accounts.<br>
+    <input type="radio" name="q16" value="b"> A repository of articles and documentation.<br>
+    <input type="radio" name="q16" value="c"> A list of tasks.<br>
+    <input type="radio" name="q16" value="d"> A catalog of services.<br>
+
+<script>
+function validateQuiz(event) {
+  event.preventDefault();
+  let score = 0;
+  const answers = {
+    q1: "b",
+    q2: "a",
+    q3: "b",
+    q4: "c",
+    q5: "b",
+    q6: "b",
+    q7: "b",
+    q8: "b",
+    q9: "b",
+    q10: "c",
+    q11: "b",
+    q12: "b",
+    q13: "a",
+    q14: "b",
+    q15: "b",
+    q16: "b"
+  };
+
+  for (let key in answers) {
+    const selected = document.querySelector(`input[name="${key}"]:checked`);
+    if (selected && selected.value === answers[key]) {
+      score++;
+    }
+  }
+
+  alert("Your score is: " + score + " out of 16");
+}
+
+document.querySelector("form").addEventListener("submit", validateQuiz);
+</script>
