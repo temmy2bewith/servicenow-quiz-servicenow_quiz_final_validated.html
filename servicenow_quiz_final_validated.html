@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ServiceNow Access Management Quiz</title>
+</head>
+<body>
+  <h2>ServiceNow Roles, Groups, and User Management Quiz</h2>
+  <form id="quizForm">
+
+    <!-- Questions 1 to 16 -->
+    <p><strong>1. What is the main difference between a role and a group in ServiceNow?</strong></p>
+    <input type="radio" name="q1" value="a"> A role is a collection of users; a group defines access permissions.<br>
+    <input type="radio" name="q1" value="b"> A group is a collection of users; a role defines access permissions.<br>
+    <input type="radio" name="q1" value="c"> Roles and groups are the same in ServiceNow.<br>
+    <input type="radio" name="q1" value="d"> A role is used only for reporting; a group is used for access control.<br>
+
+    <p><strong>2. Why is it considered best practice to assign roles to groups instead of directly to users?</strong></p>
+    <input type="radio" name="q2" value="a"> It makes it easier to manage permissions and scale access control.<br>
+    <input type="radio" name="q2" value="b"> Users cannot be assigned roles directly.<br>
+    <input type="radio" name="q2" value="c"> Groups are automatically created with roles.<br>
+    <input type="radio" name="q2" value="d"> It prevents users from logging in.<br>
+
+    <p><strong>3. When users leave an organization, what should be done with their ServiceNow accounts?</strong></p>
+    <input type="radio" name="q3" value="a"> Delete the user account immediately.<br>
+    <input type="radio" name="q3" value="b"> Deactivate the user account to preserve historical data.<br>
+    <input type="radio" name="q3" value="c"> Transfer the account to another user.<br>
+    <input type="radio" name="q3" value="d"> Keep the account active for future use.<br>
+
+    <p><strong>4. What table stores user records in ServiceNow?</strong></p>
+    <input type="radio" name="q4" value="a"> sys_user_group<br>
+    <input type="radio" name="q4" value="b"> sys_user_role<br>
+    <input type="radio" name="q4" value="c"> sys_user<br>
+    <input type="radio" name="q4" value="d"> user_profile<br>
+
+    <p><strong>5. Which of the following is true about assigning roles in ServiceNow?</strong></p>
+    <input type="radio" name="q5" value="a"> Roles can only be assigned to users.<br>
+    <input type="radio" name="q5" value="b"> Roles can be assigned to both users and groups.<br>
+    <input type="radio" name="q5" value="c"> Roles are automatically assigned based on department.<br>
+    <input type="radio" name="q5" value="d"> Roles are assigned by the system administrator only.<br>
+
+    <p><strong>6. What is the benefit of using groups in ServiceNow?</strong></p>
+    <input type="radio" name="q6" value="a"> Groups reduce the number of users in the system.<br>
+    <input type="radio" name="q6" value="b"> Groups simplify role management and task assignment.<br>
+    <input type="radio" name="q6" value="c"> Groups automatically deactivate users.<br>
+    <input type="radio" name="q6" value="d"> Groups are used only for reporting.<br>
+
+    <p><strong>7. What happens if a user has no roles assigned?</strong></p>
+    <input type="radio" name="q7" value="a"> The user cannot log in.<br>
+    <input type="radio" name="q7" value="b"> The user can access basic features like Service Catalog and Knowledge Base.<br>
+    <input type="radio" name="q7" value="c"> The user is automatically assigned default roles.<br>
+    <input type="radio" name="q7" value="d"> The user is deleted from the system.<br>
+
+    <p><strong>8. What is a list in ServiceNow?</strong></p>
+    <input type="radio" name="q8" value="a"> A graphical report of incidents.<br>
+    <input type="radio" name="q8" value="b"> A tabular display of records from a table.<br>
+    <input type="radio" name="q8" value="c"> A form used to create new records.<br>
+    <input type="radio" name="q8" value="d"> A dashboard widget.<br>
+
+    <p><strong>9. What is the purpose of a form in ServiceNow?</strong></p>
+    <input type="radio" name="q9" value="a"> To display multiple records.<br>
+    <input type="radio" name="q9" value="b"> To edit or view a single record.<br>
+    <input type="radio" name="q9" value="c"> To generate reports.<br>
+    <input type="radio" name="q9" value="d"> To filter data.<br>
+
+    <p><strong>10. What do filters do in ServiceNow?</strong></p>
+    <input type="radio" name="q10" value="a"> They delete records.<br>
+    <input type="radio" name="q10" value="b"> They sort records alphabetically.<br>
+    <input type="radio" name="q10" value="c"> They narrow down list results based on criteria.<br>
+    <input type="radio" name="q10" value="d"> They create new tables.<br>
+
+    <p><strong>11. What is a dashboard in ServiceNow?</strong></p>
+    <input type="radio" name="q11" value="a"> A form used to submit requests.<br>
+    <input type="radio" name="q11" value="b"> A visual display of reports and performance indicators.<br>
+    <input type="radio" name="q11" value="c"> A list of user roles.<br>
+    <input type="radio" name="q11" value="d"> A catalog of services.<br>
+
+    <p><strong>12. What is the purpose of reports in ServiceNow?</strong></p>
+    <input type="radio" name="q12" value="a"> To create new records.<br>
+    <input type="radio" name="q12" value="b"> To visualize and analyze data.<br>
+    <input type="radio" name="q12" value="c"> To assign tasks.<br>
+    <input type="radio" name="q12" value="d"> To impersonate users.<br>
+
+    <p><strong>13. What does user impersonation allow in ServiceNow?</strong></p>
+    <input type="radio" name="q13" value="a"> Logging in as another user to troubleshoot or test.<br>
+    <input type="radio" name="q13" value="b"> Deleting another user's account.<br>
+    <input type="radio" name="q13" value="c"> Changing another user's password.<br>
+    <input type="radio" name="q13" value="d"> Assigning roles to groups.<br>
+
+    <p><strong>14. What are user personas in ServiceNow?</strong></p>
+    <input type="radio" name="q14" value="a"> Templates for creating dashboards.<br>
+    <input type="radio" name="q14" value="b"> Predefined user types with specific access and responsibilities.<br>
+    <input type="radio" name="q14" value="c"> A list of all users in the system.<br>
+    <input type="radio" name="q14" value="d"> A report format.<br>
+
+    <p><strong>15. What is the Service Catalog used for?</strong></p>
+    <input type="radio" name="q15" value="a"> Viewing knowledge articles.<br>
+    <input type="radio" name="q15" value="b"> Requesting services and items.<br>
+    <input type="radio" name="q15" value="c"> Creating dashboards.<br>
+    <input type="radio" name="q15" value="d"> Assigning roles.<br>
+
+    <p><strong>16. What is the Knowledge Base in ServiceNow?</strong></p>
+    <input type="radio" name="q16" value="a"> A database of user accounts.<br>
+    <input type="radio" name="q16" value="b"> A repository of articles and documentation.<br>
+    <input type="radio" name="q16" value="c"> A list of tasks.<br>
+    <input type="radio" name="q16" value="d"> A catalog of services.<br>
+
+    <br>
+    <input type="submit" value="Submit Answers">
+  </form>
+
+  
+
+
+
+
+<script>
+let submitted = false;
+document.getElementById("quizForm").addEventListener("submit", function(event) {
+  event.preventDefault();
+  if (submitted) return;
+
+  const answers = {
+    q1: "b", q2: "a", q3: "b", q4: "c", q5: "b", q6: "b", q7: "b",
+    q8: "b", q9: "b", q10: "c", q11: "b", q12: "b", q13: "a",
+    q14: "b", q15: "b", q16: "b"
+  };
+
+  let score = 0;
+  let allAnswered = true;
+
+  for (let key in answers) {
+    const selected = document.querySelector(`input[name="${key}"]:checked`);
+    if (!selected) {
+      allAnswered = false;
+    }
+  }
+
+  if (!allAnswered) {
+    alert("Please answer all questions before submitting.");
+    return;
+  }
+
+  submitted = true;
+
+  for (let key in answers) {
+    const options = document.querySelectorAll(`input[name="${key}"]`);
+    options.forEach(option => {
+      if (option.value === answers[key]) {
+        option.parentElement.style.color = "green";
+        option.parentElement.style.fontWeight = "bold";
+      }
+      option.disabled = true;
+    });
+    const selected = document.querySelector(`input[name="${key}"]:checked`);
+    if (selected && selected.value === answers[key]) {
+      score++;
+    }
+  }
+
+  alert("Your score is: " + score + " out of 16. Correct answers are now highlighted in green.");
+});
+</script>
+
+</body>
+</html>
